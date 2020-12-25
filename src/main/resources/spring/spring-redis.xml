@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+      		http://www.springframework.org/schema/beans
+      		http://www.springframework.org/schema/beans/spring-beans.xsd
+        ">
+        <bean class="redis.clients.jedis.JedisPool">
+			<constructor-arg value="192.168.137.128" type="String"/>
+			<constructor-arg value="6379" type="int"/>
+        </bean>
+       
+</beans>
